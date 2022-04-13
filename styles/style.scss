@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+  }
+  
+@import "./_variables.scss";
+
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../img/1.jpg');
+    color: $textColor;
+    header {
+            display: flex;
+            justify-content: center;
+            h1 {
+                width: 80%;
+                position: relative;
+                text-align: center;
+                text-transform: uppercase;
+                line-height: 50px;
+                color: $houseStyleOrange;
+                background-color: #76767660;
+                font-size: 3rem;
+                border: 6px solid $houseStyleOrange;
+                border-top: 0;
+                border-bottom: 12px solid $houseStyleOrange;
+                padding: 30px 50px 40px 50px;
+                border-radius: 0% 0% 50% 50% ;
+                text-shadow:  0 5px 10px #000;
+            }
+        }
+    .container {
+        padding-top: 20px;
+        text-align: center;
+        h3 {
+            font-size: 4em;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding-top: 10px;
+        border-bottom: 2px solid $houseStyleOrange;
+        
+        .nav-item{
+            padding: 20px 15px 10px 15px;
+            font-size: 1.2em;
+            accent-color: $houseStyleOrange;
+            #searchLabel {
+                padding: 0;
+            }
+            #searchBar {
+                outline: none;
+                margin-left: 5px; 
+                padding-left: 10px;
+                padding-top: 2px;
+                color: black;
+                font-size: 0.9em;
+                width: 200px;
+                height: 20px;
+                -webkit-text-stroke:0.2px $houseStyleOrange;
+                &:focus-within {
+                    border: 2px solid $houseStyleOrange;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+    .movieWrapper{
+        height: 400px;
+        width: 90%;
+        overflow-x: scroll;
+        #movies {
+            display: grid;
+            grid-auto-flow: column;
+            list-style-type: none;
+            align-content: center;
+            gap: 10px;
+            padding: 10px;
+            padding-bottom: 15px;
+            margin: 10px;
+            img {
+                width: 210px;
+                height: 100%;
+                border-radius: 5px;
+                box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
+                border: 1px solid rgba(255, 123, 0, 0);
+                &:hover {
+                    @include hoverImageEffect;
+                }
+            }
+        }
+    } 
+    h2 {
+        font-size: 4em;
+        text-transform: uppercase;
+        padding-top: 20px;
+        width: 80%;
+        text-align: center;
+        border-bottom: 2px solid $houseStyleOrange;
+        text-shadow:  0 5px 10px #000;
+    }
+    .allMoviesWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        #allMovies {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style-type: none;
+            gap: 12px;
+            padding: 15px 0 30px 0 ;
+            margin: 0 20px;
+            img {
+                height: 100%;
+                width: 300px;
+                border-radius: 5px;
+                box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
+                border: 1px solid rgba(255, 123, 0, 0);
+                &:hover {
+                    @include hoverImageEffect;
+                }
+            }
+        } 
+    }
+    footer {
+        width: 80%;
+        border-top: 2px solid $houseStyleOrange;
+        padding: 5px 0;
+        p {
+        text-align: center;
+        
+        }
+    }
+}   
+::-webkit-scrollbar {
+    width: 1.5em;
+    background-color: #76767660;
+    border-radius: 100vw;
+    height: 1.2em;
+}
+::-webkit-scrollbar-track {
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #202020;
+    margin: 3px;
+    border-radius: 100vw;
+    border: 2px solid $houseStyleOrange;
+}
+

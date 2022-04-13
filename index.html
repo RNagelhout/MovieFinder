@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script id="movieJS" defer src="./js/_movies.js"></script>
+    <script></script>
+    <script defer src="./js/script.js"></script>
+    <title>Assignment: Film finder</title>
+</head>
+<body onload="loadLatestMovies()">
+    <header>
+        <h1> Nailwood<br>Movie Database </h1>
+    </header>
+    
+    <nav>
+        <div class="nav-item">
+            <input type="radio" id="latest-movies" name="selectie-movies" value="latest-movies" checked/>
+            <label for="latest-movies">Latest movies, 2014 or newer</label>
+        </div>
+        <div class="nav-item">
+            <input type="radio" id="avenger" name="selectie-movies" value="avenger-movies">
+            <label for="avenger">Avenger movies</label>
+        </div>
+        <div class="nav-item">
+            <input type="radio" id="x-men" name="selectie-movies" value="x-men-movies">
+            <label for="x-men">X-men movies</label>
+        </div>
+        <div class="nav-item">
+            <input type="radio" id="princess" name="selectie-movies" value="princess-movies">
+            <label for="princess">Princess movies</label>
+        </div>
+        <div class="nav-item">
+            <input type="radio" id="batman" name="selectie-movies" value="batman-movies">
+            <label for="batman">Batman movies</label>
+        </div>
+        <div class="nav-item">
+            <label id="searchLabel" for="searchBar"> Search : </label>
+            <input type="text" name="searchBar" id="searchBar" placeholder="Search Movie...">
+        </div>
+    </nav>
+ 
+
+    <div class="movieWrapper">
+        <ul id="movies" class="row">
+
+        </ul>
+    </div>
+    <h2>All Movies</h2>
+    <div class="allMoviesWrapper">
+        
+        <ul id="allMovies">
+
+        </ul>
+    </div>
+    <footer>
+        <p>
+            © 2022 René Nagelhout | Website door: René Nagelhout <br>
+            | Privacyverklaring | Disclaimer<br>
+        </p>
+    </footer>
+</body>
+</html>

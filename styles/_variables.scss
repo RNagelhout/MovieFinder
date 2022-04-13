@@ -1,0 +1,9 @@
+$textColor: #fff;
+$houseStyleOrange: rgb(245, 118, 0);
+
+@mixin hoverImageEffect{
+    transform: scale(1.05);
+    transition: 400ms transform ease-in-out, 300ms opacity ease-in-out;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 2);
+    border: 1px solid $houseStyleOrange;
+    cursor: pointer;}

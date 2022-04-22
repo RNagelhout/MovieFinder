@@ -32,7 +32,6 @@ for (const movie of newMovieList) {
 }
 
 for (const movie of movies) {
-    console.log(latestMovies)
     const element = makeMovieElement(movie);
     movieUl.appendChild(element)
 }
@@ -61,7 +60,6 @@ radios.forEach(radio => radio.addEventListener('change', (e) => {
         case "latest-movies": 
             movieUl.innerHTML = '';
            for (const movie of latestMovies) {
-                console.log(latestMovies)
                 const element = makeMovieElement(movie);
                 movieUl.appendChild(element)
             }
@@ -70,7 +68,6 @@ radios.forEach(radio => radio.addEventListener('change', (e) => {
             movieUl.innerHTML = '';
             for (const movie of filteredMovies) {
                 const element = makeMovieElement(movie);
-                console.log(element);
                 movieUl.appendChild(element)
             }
         break;

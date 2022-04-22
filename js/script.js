@@ -4,7 +4,6 @@ const newMovieList = movies.map((a) => {
     return a;
 }); 
 
-
 const latestMovies = movies.filter((movie) => movie.year >= "2014");
 const allMovies = document.getElementById("allMovies");
 const movieUl = document.querySelector("#FilteredMovieList");
@@ -35,7 +34,6 @@ for (const movie of movies) {
     const element = makeMovieElement(movie);
     movieUl.appendChild(element)
 }
-
 
 //This is the code for to create a list from the search movie text value. 
 searchBar.addEventListener("keyup", (e) => {
@@ -98,5 +96,4 @@ radios.forEach(radio => radio.addEventListener('change', (e) => {
 }
 ))
 
-// This code created the startpageview for ALL MOVIES.
 

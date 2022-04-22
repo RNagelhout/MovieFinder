@@ -82,7 +82,7 @@ body {
         height: 400px;
         width: 90%;
         overflow-x: scroll;
-        #movies {
+        #FilteredMovieList {
             display: grid;
             grid-auto-flow: column;
             list-style-type: none;

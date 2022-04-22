@@ -8,12 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <script defer id="movieJS" src="./js/_movies.js"></script>
-    <script></script>
+    <script defer id="movieJS" src="js/_movies.js"></script>
     <script defer src="./js/script.js"></script>
     <title>Assignment: Film finder</title>
 </head>
-<body onload="loadLatestMovies()">
+<body>
     <header>
         <h1> Nailwood<br>Movie Database </h1>
     </header>
@@ -21,7 +20,7 @@
     <nav>
         <div class="nav-item">
             <input type="radio" id="latest-movies" name="selectie-movies" value="latest-movies" checked/>
-            <label for="latest-movies">Latest movies, 2014 or newer</label>
+            <label for="latest-movies">Latest movies</label>
         </div>
         <div class="nav-item">
             <input type="radio" id="avenger" name="selectie-movies" value="avenger-movies">
@@ -47,7 +46,7 @@
  
 
     <div class="movieWrapper">
-        <ul id="movies" class="row">
+        <ul id="FilteredMovieList" class="row">
 
         </ul>
     </div>

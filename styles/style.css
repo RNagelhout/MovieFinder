@@ -112,7 +112,7 @@ body .movieWrapper {
   overflow-x: scroll;
 }
 
-body .movieWrapper #movies {
+body .movieWrapper #FilteredMovieList {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
@@ -125,7 +125,7 @@ body .movieWrapper #movies {
   margin: 10px;
 }
 
-body .movieWrapper #movies img {
+body .movieWrapper #FilteredMovieList img {
   width: 210px;
   height: 100%;
   border-radius: 5px;
@@ -134,7 +134,7 @@ body .movieWrapper #movies img {
   border: 1px solid rgba(255, 123, 0, 0);
 }
 
-body .movieWrapper #movies img:hover {
+body .movieWrapper #FilteredMovieList img:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   -webkit-transition: 300ms opacity ease-in-out, 400ms -webkit-transform ease-in-out;
